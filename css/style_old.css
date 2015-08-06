@@ -1,0 +1,115 @@
+body{
+	width:100%;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	color: #333;
+
+	margin: 5px 0
+
+   	-webkit-box-sizing: border-box
+  	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.each-project {
+  	position: relative;
+}
+
+.page-wrapper {
+	width:65%;
+	max-width: 700px;
+	padding-left:25px;
+	background-color: #fff;
+
+   	-webkit-box-sizing: border-box
+       -moz-box-sizing: border-box;
+   	        box-sizing: border-box;
+}
+.im-nadja{
+	font-size: 100px;
+	font-family: 'Inconsolata', Georgia, serif;
+	width:100%;
+}
+.page-wrapper p, 
+.page-wrapper li {
+	font-size:32px;
+	font-weight: 300;
+}
+.page-wrapper li {
+	margin-bottom:40px;
+}
+
+.intro{
+	margin: 15% 0 50px 0;
+}
+.page-wrapper a{
+	color: #cc00cc;
+	text-decoration: none;
+	padding: 0 3px;
+}
+.page-wrapper a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.section-header {
+	font-family: 'Inconsolata', Georgia, serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top:25px;
+	text-transform: uppercase;
+}
+/* Using text-transform instead of a for-real small cap font like ¯\_(ツ)_/¯ */
+
+.in-touch {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width:100%;
+	padding: 15px 0;
+	margin-bottom:100px;
+
+	font-family: 'Inconsolata', Georgia, serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+.in-touch span{
+	text-transform: uppercase;
+}
+.image-wrapper, .text-wrapper{
+	display: inline-block;
+}
+.other{
+	margin:100px 0 25px 0;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 400px){
+	.page-wrapper {
+	    width: 100%;
+	    padding: 0 25px;
+	}
+	.im-nadja {
+    	font-size: 62px;
+	}
+	.intro {
+	    margin: 50px 0;
+	}
+	ul{
+		/*list-style:none;*/
+    	padding-left:25px;
+	}
+	.page-wrapper p, 
+	.page-wrapper li,
+	.in-touch span,
+	.in-touch a,
+	.section-header {
+    	font-size: 24px;
+	}
+	.in-touch{
+		margin-bottom: 50px;
+	}
+	.in-touch span{
+		display: block;
+		padding-bottom: 10px;
+	}
+
+}
