@@ -1,0 +1,9 @@
+var projects = [ 
+  {"project": "72 hours and counting: Missouri's last clinic confronts new abortion reality", "link": "http://www.theguardian.com/us-news/2015/jun/22/missouri-abortion-st-louis-planned-parenthood"},
+  {"project": "Why it's important that (almost) everyone get vaccinated against measles – a simple simulation", "link":"http://www.theguardian.com/society/ng-interactive/2015/feb/05/-sp-watch-how-measles-outbreak-spreads-when-kids-get-vaccinated"},
+  {"project": "Women share the story of their abortion for the 42nd anniversary of Roe v. Wade ", "link":"http://www.theguardian.com/world/ng-interactive/2015/jan/22/-sp-roe-v-wade-42-years-womens-abortion-stories"},
+  {"project": "Are you reflected in the new Congress? – a demographic breakdown", "link":"http://www.theguardian.com/us-news/ng-interactive/2014/nov/06/-sp-congress-diversity-women-race-lgbt-are-you-represented"},
+  {"project": "What Texas' controversial abortion law means for women in the state", "link":"http://www.theguardian.com/world/2014/sep/02/-sp-texas-controversial-abortion-law-means-for-women"},
+  {"project": "Beyond the border: the US's deadly immigration crisis", "link":"http://www.theguardian.com/world/ng-interactive/2014/aug/06/-sp-texas-border-deadliest-state-undocumented-migrants"},
+  {"project": "Caught in a net: key players in the NSA Files: Decoded", "link":"http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded"}
+]
