@@ -24,97 +24,157 @@ body{
        -moz-box-sizing: border-box;
    	        box-sizing: border-box;
 }
+
 .im-nadja{
 	font-size: 100px;
 	font-family: 'Inconsolata', Georgia, serif;
 	width:100%;
 }
+
 .page-wrapper p, 
 .page-wrapper li {
-	font-size:32px;
 	font-weight: 300;
+	font-size: 24px;
 }
 .page-wrapper li {
-	margin-bottom:40px;
+	margin-bottom: 24px;
 }
 
-.intro{
-	margin: 15% 0 50px 0;
+.page-wrapper .intro p {
+	font-size: 36px;
 }
-.page-wrapper a{
-	color: #cc00cc;
+
+.page-wrapper .section {
+	margin: 75px 0;
+	border-top: 1px solid #ccc;
+	padding-top: 75px;
+}
+
+.page-wrapper .section.intro {
+	margin: 15% 0 75px 0;
+}
+
+.page-wrapper .section.intro,
+.page-wrapper .section.in-touch {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.page-wrapper a {
+	color: #C84CCC;
 	text-decoration: none;
-	padding: 0 3px;
+	/*padding: 0 3px;*/
 }
-.page-wrapper a:hover{
+.page-wrapper a:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
 .section-header {
 	font-family: 'Inconsolata', Georgia, serif;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 700;
-	margin-top:25px;
 	text-transform: uppercase;
 }
 /* Using text-transform instead of a for-real small cap font like ¯\_(ツ)_/¯ */
 
-.in-touch {
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+.section.in-touch {
 	width:100%;
 	padding: 15px 0;
-	margin-bottom:100px;
 
 	font-family: 'Inconsolata', Georgia, serif;
 	font-size: 18px;
+}
+.section.in-touch span{
+	text-transform: uppercase;
 	font-weight: 700;
 }
-.in-touch span{
-	text-transform: uppercase;
-}
-.image-wrapper, .text-wrapper{
-	display: inline-block;
-}
-.other{
-	margin:100px 0 25px 0;
-	padding-bottom: 25px;
-	border-bottom: 1px solid #ccc;
+
+.text-wrapper a {
+	margin-left: 8px;
+	padding: 0;
 }
 
-@media screen and (max-width: 400px){
+.image-wrapper, .text-wrapper {
+	display: inline-block;
+}
+
+.other {
+	margin:100px 0 25px 0;
+	padding-bottom: 25px;
+/*	border-bottom: 1px solid #ccc;*/
+}
+
+.contact-img {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+
+    vertical-align: bottom;
+    padding-top: 2px;
+}
+
+.tweet {
+	background-image: url('../images/twitter.png');
+}
+.email {
+	background-image: url('../images/envelope.png');
+}
+
+.last-updated {
+	font-size: 11px;
+	color: #ccc;
+	font-family: 'Inconsolata', Georgia, serif;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 400px) {
 	.page-wrapper {
 	    width: 100%;
 	    padding: 0 25px;
 	}
+
 	.im-nadja {
     	font-size: 62px;
 	}
+
 	.intro {
 	    margin: 50px 0;
 	}
-	ul{
+
+	ul {
 		/*list-style:none;*/
-    	padding-left:25px;
+    	padding: 0 25px;
 	}
-	.page-wrapper p, 
-	.page-wrapper li,
-	.in-touch span,
-	.in-touch a,
-	.section-header {
-    	font-size: 24px;
-	}
-	.in-touch{
+
+	.in-touch {
 		margin-bottom: 50px;
 	}
-	.in-touch span{
+
+	.in-touch span { 
 		display: block;
 		padding-bottom: 10px;
 	}
 
+	.page-wrapper .intro p {
+		font-size: 24px;
+	}
+
+	.page-wrapper p, 
+	.page-wrapper li {
+		font-size: 18px;
+	}
+	.page-wrapper li {
+		margin-bottom: 18px;
+	}
+
+
 }
-@media screen and (min-width: 1200px){
-	.page-wrapper{
+@media screen and (min-width: 1200px) {
+	.page-wrapper {
 		margin-top: 100px 0 0 50px;
 	}
 }
