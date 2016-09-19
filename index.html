@@ -121,9 +121,7 @@
 	} //if not new
 	else {
 		var colors = originalColors.slice();
-		colors.splice(lastSeenColor, 1);
-
-		console.log(colors, 'colors')
+		colors.splice(+lastSeenColor, 1);
 
 		// get color
 		color = colors[getRandom(colors)];
