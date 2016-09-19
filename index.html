@@ -112,7 +112,6 @@
 
 	//if new
 	if (lastSeenColor === null) {
-		console.log('null')
 
 		//get color
 		color = originalColors[getRandom(originalColors)];
@@ -121,7 +120,6 @@
     	localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
 	} //if not new
 	else {
-		console.log(lastSeenColor)
 		var colors = originalColors.slice();
 		colors.splice(lastSeenColor, 1);
 
