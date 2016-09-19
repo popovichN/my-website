@@ -106,25 +106,32 @@
 
 	var nodes = document.querySelectorAll('.color-in');
 
-	if (typeof(Storage) === "poop") {
-		console.log('if')
-		//retrieve
-		    var lastSeenColor = localStorage.getItem("lastSeenColor");
+	//retrieve
+	var lastSeenColor = localStorage.getItem("lastSeenColor");
+	var color = '';
 
-		    if (lastSeenColor !== null) {
-		    	var colors = originalColors.slice();
-		    	colors.splice(lastSeenColor, 1);
-		    }
+	//if new
+	if (lastSeenColor === null) {
+		console.log('null')
 
-		// get color
-		var color = colors[getRandom(colors)];
+		//get color
+		color = originalColors[getRandom(originalColors)];
 
     	// store
     	localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
-
-	} 
+	} //if not new
 	else {
-		var color = originalColors[getRandom(originalColors)];
+		console.log(lastSeenColor)
+		var colors = originalColors.slice();
+		colors.splice(lastSeenColor, 1);
+
+		console.log(colors, 'colors')
+
+		// get color
+		color = colors[getRandom(colors)];
+
+		// store
+    	localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
 	}
 
 	for (var i = 0; i < nodes.length; i++) {
