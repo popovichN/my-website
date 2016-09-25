@@ -15,20 +15,22 @@ body{
 }
 
 .page-wrapper {
-	width:65%;
-	max-width: 825px;
-	padding-left:25px;
+	width: 100%;
+	max-width: 740px;
+	padding:0 20px;
 	background-color: #fff;
+    margin: 50px auto;
 
    	-webkit-box-sizing: border-box
        -moz-box-sizing: border-box;
    	        box-sizing: border-box;
 }
 
-.im-nadja{
+.nadja{
 	font-size: 100px;
 	font-family: 'Inconsolata', Georgia, serif;
 	width:100%;
+	font-weight: 800;
 }
 
 .page-wrapper p, 
@@ -41,7 +43,7 @@ body{
 }
 
 .page-wrapper .intro p {
-	font-size: 36px;
+	font-size: 24px;
 }
 
 .page-wrapper .section {
@@ -131,13 +133,13 @@ body{
 	margin-bottom: 25px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 620px) {
 	.page-wrapper {
 	    width: 100%;
 	    padding: 0 25px;
 	}
 
-	.im-nadja {
+	.nadja {
     	font-size: 62px;
 	}
 
@@ -172,9 +174,4 @@ body{
 	}
 
 
-}
-@media screen and (min-width: 1200px) {
-	.page-wrapper {
-		margin-top: 100px 0 0 50px;
-	}
 }
