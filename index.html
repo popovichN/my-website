@@ -98,46 +98,48 @@
 	});
 
 
-//change colors!
+// change colors!
 
 	var originalColors = [ '4DD198', '4FAAC8', 'EF5888', '8A58D0', 'FFA600', 'C84CCC'];
 
-	//get random color from colors array
+	// get random color from colors array
 	function getRandom( randomize ) {
 	    return Math.floor(Math.random() * randomize.length);
 	};
 
 	var nodes = document.querySelectorAll('.color-in');
 
-	//retrieve
+	// retrieve
 	var lastSeenColor = localStorage.getItem("lastSeenColor");
 	var color = '';
 
-	//if new
+	// if new
 	if (lastSeenColor === null) {
 
-		//get color
+		// assign color
 		color = originalColors[getRandom(originalColors)];
 
     	// store
     	localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
-	} //if not new
+
+	} // if not new
 	else {
+		// make copy
 		var colors = originalColors.slice();
+		//remove current color
 		colors.splice(+lastSeenColor, 1);
 
-		// get color
+		// assign color
 		color = colors[getRandom(colors)];
 
 		// store
     	localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
 	}
 
+	// set styles
 	for (var i = 0; i < nodes.length; i++) {
 	    nodes[i].style.color = '#' + color;
 	}
-
-
 
 </script>
 
