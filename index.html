@@ -15,8 +15,8 @@
 
 <title>Nadja Popovich dot com</title>
 
-<!-- <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
- -->
+<script src='/js/ractive.min.js'></script>
+
 </head>
 
 <body>
@@ -89,24 +89,24 @@
 		// {'project': 'Caught in a net: key players in the NSA Files: Decoded', 'link':'http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded'}
 	];
 
-	// load template
-	// var ractive = new Ractive({
-	// 	el: '.projects',
-	// 	template: '#template',
-	// 	data: { 
-	// 		projects 
-	// 	}
-	// });
+	//load template
+	var ractive = new Ractive({
+		el: '.projects',
+		template: '#template',
+		data: { 
+			projects 
+		}
+	});
 
-	var proj_dom = document.querySelector('.projects');
-	console.log(proj_dom, document.body)
+	// var proj_dom = document.querySelector('.projects');
+	// console.log(proj_dom, document.body)
 
-	projects.forEach(function (project) {
-		var z = document.createElement('li');
-		z.innerHTML = '<a href="' + project.link + '" target="_blank">' + project.project + '</a></li>';
+	// projects.forEach(function (project) {
+	// 	var z = document.createElement('li');
+	// 	z.innerHTML = '<a href="' + project.link + '" target="_blank">' + project.project + '</a></li>';
 
-		proj_dom.appendChild(z);
-	})
+	// 	proj_dom.appendChild(z);
+	// })
 
 
 // change colors!
