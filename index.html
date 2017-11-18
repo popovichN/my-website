@@ -15,8 +15,8 @@
 
 <title>Nadja Popovich dot com</title>
 
-<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
-
+<!-- <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+ -->
 </head>
 
 <body>
@@ -90,17 +90,26 @@
 	];
 
 	// load template
-	var ractive = new Ractive({
-		el: '.projects',
-		template: '#template',
-		data: { 
-			projects 
-		}
-	});
+	// var ractive = new Ractive({
+	// 	el: '.projects',
+	// 	template: '#template',
+	// 	data: { 
+	// 		projects 
+	// 	}
+	// });
+
+	var proj_dom = document.querySelector('.projects');
+	console.log(proj_dom, document.body)
+
+	projects.forEach(function (project) {
+		var z = document.createElement('li');
+		z.innerHTML = '<a href="' + project.link + '" target="_blank">' + project.project + '</a></li>';
+
+		proj_dom.appendChild(z);
+	})
 
 
 // change colors!
-
 	var originalColors = [ '4DD198', '4FAAC8', 'EF5888', '8A58D0', 'FFA600', 'C84CCC'];
 
 	// get random color from colors array
